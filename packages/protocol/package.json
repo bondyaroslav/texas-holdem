@@ -1,0 +1,22 @@
+{
+  "name": "@poker/protocol",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@poker/engine": "workspace:*",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@poker/config": "workspace:*",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  }
+}

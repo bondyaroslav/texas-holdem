@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/poker-engine" },
+    { "path": "./packages/poker-ai" },
+    { "path": "./packages/protocol" },
+    { "path": "./packages/poker-analysis" },
+    { "path": "./apps/web" }
+  ]
+}

@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+  --color-bg: #070c16;
+  --color-surface: #0f1829;
+  --color-surface-2: #16223a;
+  --color-border: rgb(148 163 184 / 0.18);
+  --color-fg: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-felt: #0b6e4f;
+  --color-accent: #f2c75c;
+  --color-accent-fg: #1a1203;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+  /* Categorical series, dark steps validated on --color-surface (dataviz validator: all checks pass). */
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  /* Status colours: reserved for verdicts/severity, always paired with an icon and text. */
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+  --radius-card: 0.5rem;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

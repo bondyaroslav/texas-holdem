@@ -1,0 +1,10 @@
+{
+  "extends": ["../../tsconfig.base.json", "@poker/config/tsconfig/lib.json"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {}
+  },
+  "include": ["src"]
+}

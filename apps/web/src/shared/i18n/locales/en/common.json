@@ -1,0 +1,573 @@
+{
+  "app": {
+    "name": "Texas Hold'em"
+  },
+  "nav": {
+    "lobby": "Lobby",
+    "table": "Table",
+    "settings": "Settings",
+    "handHistory": "Hand History",
+    "main": "Main navigation",
+    "handRankings": "Hand rankings",
+    "stats": "Stats",
+    "glossary": "Glossary"
+  },
+  "pages": {
+    "lobby": {
+      "title": "Lobby",
+      "description": "Configure the table and start a game against bots.",
+      "quickPlay": "Quick play",
+      "customize": "Customize table",
+      "features": {
+        "noLimit": {
+          "title": "No-Limit",
+          "text": "Full rules: blinds, side pots, all-in."
+        },
+        "bots": {
+          "title": "Bots",
+          "text": "1 to 8 opponents of varying skill."
+        },
+        "offline": {
+          "title": "Offline",
+          "text": "Runs in your browser, no sign-up."
+        }
+      }
+    },
+    "table": {
+      "title": "Table"
+    },
+    "settings": {
+      "title": "Settings"
+    },
+    "handHistory": {
+      "title": "Hand History",
+      "description": "Hands you played, reviewed: result, decision accuracy, key moments."
+    },
+    "handRankings": {
+      "title": "Hand rankings",
+      "description": "From strongest to weakest. Make the best 5 cards out of 7 (your 2 plus 5 shared). Dimmed cards are kickers."
+    },
+    "stats": {
+      "title": "Stats",
+      "description": "Your numbers, all-in luck and typical mistakes."
+    },
+    "glossary": {
+      "title": "Glossary"
+    }
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "retry": "Try again"
+  },
+  "table": {
+    "connecting": "Connecting to the table…",
+    "you": "You",
+    "pot": "Pot",
+    "communityCards": "Community cards",
+    "startHand": "Start hand",
+    "actions": {
+      "fold": "Fold",
+      "check": "Check",
+      "call": "Call {{amount}}",
+      "bet": "Bet",
+      "raise": "Raise"
+    },
+    "betting": {
+      "halfPot": "1/2 pot",
+      "pot": "Pot",
+      "allIn": "All-in",
+      "decrease": "Decrease bet",
+      "increase": "Increase bet"
+    },
+    "status": {
+      "allIn": "All-in",
+      "fold": "Fold"
+    },
+    "result": {
+      "won": "You won {{amount}}",
+      "lost": "You lost. {{names}} took the pot: +{{amount}}",
+      "other": "{{names}} won {{amount}}"
+    },
+    "gameOver": {
+      "busted": "You are out of the game",
+      "bustedText": "You have no chips left.",
+      "champion": "You won the game!",
+      "championText": "All opponents are out.",
+      "newGame": "New game"
+    },
+    "waiting": "Opponents are thinking…"
+  },
+  "settings": {
+    "botCount": "Number of bots",
+    "botDifficulty": "Bot difficulty",
+    "difficulty": {
+      "beginner": "Beginner",
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "expert": "Expert",
+      "mixed": "Mixed"
+    },
+    "difficultyHint": {
+      "beginner": "Plays almost every hand, rarely raises, makes plenty of mistakes.",
+      "easy": "Follows a simple hand chart and continues with a pair or better. Ignores position.",
+      "medium": "Plays by position, weighs pot odds and draws, continuation-bets, bluffs now and then.",
+      "hard": "Calculates equity against your likely hands, sizes bets to the board and stacks, bluffs in balance.",
+      "expert": "Everything Hard does, plus it studies your style and adapts, mixes its actions and is careful with all-ins in tournaments.",
+      "mixed": "Bots of different levels at one table: easy, medium, hard and expert."
+    },
+    "startingStack": "Starting stack",
+    "smallBlind": "Small blind",
+    "bigBlind": "Big blind",
+    "ante": "Ante",
+    "startGame": "Start game",
+    "history": {
+      "title": "Hand history",
+      "limit": "Hands to keep",
+      "limitHint": "The oldest hands are removed automatically.",
+      "cleared": "History cleared."
+    },
+    "sound": {
+      "title": "Sound",
+      "enabled": "Sound effects",
+      "volume": "Volume",
+      "preview": "Preview",
+      "hint": "Sound starts after your first click or key press on the page.",
+      "toggle": "Sound",
+      "on": "Sound is on",
+      "off": "Sound is off"
+    }
+  },
+  "handRankings": {
+    "items": {
+      "royalFlush": {
+        "name": "Royal flush",
+        "description": "Ace, king, queen, jack and ten of the same suit."
+      },
+      "straightFlush": {
+        "name": "Straight flush",
+        "description": "Five consecutive cards of the same suit."
+      },
+      "fourOfAKind": {
+        "name": "Four of a kind",
+        "description": "Four cards of the same rank."
+      },
+      "fullHouse": {
+        "name": "Full house",
+        "description": "Three of a kind plus a pair."
+      },
+      "flush": {
+        "name": "Flush",
+        "description": "Five cards of the same suit, not in sequence."
+      },
+      "straight": {
+        "name": "Straight",
+        "description": "Five consecutive cards of mixed suits. The ace plays high or low (A-2-3-4-5)."
+      },
+      "threeOfAKind": {
+        "name": "Three of a kind",
+        "description": "Three cards of the same rank."
+      },
+      "twoPair": {
+        "name": "Two pair",
+        "description": "Two different pairs."
+      },
+      "pair": {
+        "name": "One pair",
+        "description": "Two cards of the same rank."
+      },
+      "highCard": {
+        "name": "High card",
+        "description": "No combination — the highest card decides."
+      }
+    }
+  },
+  "streets": {
+    "preflop": "Preflop",
+    "flop": "Flop",
+    "turn": "Turn",
+    "river": "River",
+    "showdown": "Showdown"
+  },
+  "positions": {
+    "utg": "UTG",
+    "mp": "MP",
+    "hj": "HJ",
+    "co": "CO",
+    "btn": "Button",
+    "sb": "SB",
+    "bb": "BB"
+  },
+  "verdict": {
+    "best": "Best",
+    "good": "Good",
+    "inaccuracy": "Inaccuracy",
+    "mistake": "Mistake",
+    "blunder": "Blunder"
+  },
+  "severity": {
+    "minor": "Minor",
+    "moderate": "Moderate",
+    "major": "Major"
+  },
+  "history": {
+    "loading": "Loading…",
+    "error": "Could not load the hand history.",
+    "empty": "No hands played yet.",
+    "play": "Go to the table",
+    "count": "Showing {{shown}} of {{total}}",
+    "export": "Export as .txt",
+    "clear": "Clear history",
+    "clearConfirm": "Yes, delete everything",
+    "clearCancel": "Cancel",
+    "hand": "Hand #{{number}}",
+    "result": "{{value}} bb",
+    "analysing": "Analysing…",
+    "noDecisions": "No decisions",
+    "accuracy": "Accuracy {{value}}%",
+    "labels": {
+      "showdown": "Showdown",
+      "allIn": "All-in",
+      "badBeat": "Bad beat",
+      "suckOut": "Suck-out",
+      "bigPot": "Big pot"
+    },
+    "filters": {
+      "title": "Filters",
+      "all": "All",
+      "position": "Position",
+      "verdict": "Verdict",
+      "street": "Reached street",
+      "botLevel": "Bot level"
+    }
+  },
+  "review": {
+    "back": "Back to history",
+    "title": "Review of hand #{{number}}",
+    "titleGeneric": "Hand review",
+    "notFound": "Hand not found — the history may have been cleared.",
+    "pending": "The analysis is still running. This page updates by itself.",
+    "generic": "—",
+    "potKind": {
+      "main": "Main pot",
+      "side": "Side pot"
+    },
+    "action": {
+      "fold": "Fold",
+      "check": "Check",
+      "call": "Call",
+      "bet": "Bet",
+      "raise": "Raise",
+      "allIn": "All-in"
+    },
+    "replay": {
+      "title": "Replayer",
+      "first": "To the start",
+      "previousStreet": "Previous street",
+      "previous": "Step back",
+      "next": "Step forward",
+      "nextStreet": "Next street",
+      "last": "To the result",
+      "step": "Step {{n}} of {{count}}",
+      "keyboardHint": "Keys: ←/→ step, PageUp/PageDown or Shift+←/→ street, Home/End start/end.",
+      "noBoard": "No board yet",
+      "tableCaption": "Players at this step",
+      "player": "Player",
+      "cards": "Cards",
+      "stack": "Stack",
+      "bet": "Bet",
+      "lastAction": "Action",
+      "won": "won {{amount}}",
+      "sliderLabel": "Hand step"
+    },
+    "equity": {
+      "title": "Equity by street",
+      "chartLabel": "Line chart of each player's equity by street, in percent",
+      "street": "Street",
+      "showTable": "Show as table",
+      "none": "No equity data."
+    },
+    "turning": {
+      "title": "Turning points",
+      "badBeat": "Bad beat: {{player}} had {{before}}% on the {{street}} but lost.",
+      "suckOut": "Suck-out: {{player}} had only {{before}}% on the {{street}} but won.",
+      "swing": "Swing: {{player}}'s equity went from {{before}}% to {{after}}% after the {{street}}."
+    },
+    "decisions": {
+      "title": "Your decisions",
+      "viewLegend": "What equity is measured against",
+      "view": {
+        "range": "Against the range",
+        "known": "With known cards"
+      },
+      "knownNote": "For reference only: numbers against the opponents' real cards, which you could not see. Verdicts always use the range.",
+      "none": "You made no decisions in this hand.",
+      "cardLabel": "{{street}}: {{action}}",
+      "equity": "Equity",
+      "required": "Equity needed",
+      "potToCall": "Pot / to call",
+      "evLoss": "EV loss",
+      "alternatives": "Alternatives and their EV",
+      "option": "Option",
+      "note": "Note",
+      "chosen": "your choice",
+      "best": "best",
+      "estimate": "estimate",
+      "showInReplay": "Show in the replayer"
+    },
+    "outcome": {
+      "title": "Outcome",
+      "bestFive": "Best five cards"
+    },
+    "summary": {
+      "title": "Summary",
+      "result": "Result",
+      "accuracy": "Accuracy",
+      "position": "Position",
+      "allInEv": "All-in: expected / actual",
+      "allInValue": "{{expected}} / {{actual}} bb",
+      "meta": "Hand #{{number}} · {{date}} · blinds {{blinds}}"
+    }
+  },
+  "replay": {
+    "deal": "Cards dealt to {{players}} players.",
+    "action": {
+      "fold": "{{player}}: folds",
+      "check": "{{player}}: checks",
+      "call": "{{player}}: calls {{amount}}",
+      "bet": "{{player}}: bets {{amount}}",
+      "raise": "{{player}}: raises to {{amount}}",
+      "allIn": "{{player}}: all-in"
+    },
+    "street": {
+      "flop": "Flop",
+      "turn": "Turn",
+      "river": "River"
+    },
+    "showdown": "Showdown: cards are turned over.",
+    "result": "{{winners}} take(s) the pot: {{amount}}."
+  },
+  "decision": {
+    "generic": "Equity {{equityPct}}%, loss {{evLossBb}} bb.",
+    "fold": {
+      "ok": "Folding is right: {{equityPct}}% equity against the range, while a call needs {{requiredPct}}%.",
+      "preferCall": "This fold was a mistake: {{equityPct}}% equity against the range beats the {{requiredPct}}% needed — calling was profitable. Loss {{evLossBb}} bb.",
+      "preferRaise": "Instead of folding you should have raised: the hand is strong enough ({{equityPct}}% equity). Loss {{evLossBb}} bb (estimate).",
+      "preferCheck": "No need to fold — you could have checked for free."
+    },
+    "check": {
+      "ok": "Checking is reasonable: {{equityPct}}% equity.",
+      "preferRaise": "Betting was better: with {{equityPct}}% equity a bet earns more than a check. Loss {{evLossBb}} bb (estimate)."
+    },
+    "call": {
+      "ok": "The call is justified: {{equityPct}}% equity against the range with {{requiredPct}}% needed.",
+      "preferFold": "Calling without the odds: only {{equityPct}}% equity where {{requiredPct}}% was needed. Loss {{evLossBb}} bb.",
+      "preferRaise": "Calling is profitable, but raising is likely better: {{equityPct}}% equity. Loss {{evLossBb}} bb (estimate)."
+    },
+    "bet": {
+      "ok": "A good bet: {{equityPct}}% equity plus a chance the opponents fold.",
+      "preferCheck": "This bet is likely unprofitable: checking was better. Loss {{evLossBb}} bb (estimate).",
+      "preferFold": "This bet is likely unprofitable. Loss {{evLossBb}} bb (estimate)."
+    },
+    "raise": {
+      "ok": "A good raise: {{equityPct}}% equity plus fold equity.",
+      "preferFold": "This raise is likely unprofitable: folding was better. Loss {{evLossBb}} bb (estimate).",
+      "preferCall": "This raise is likely worse than a call: {{equityPct}}% equity. Loss {{evLossBb}} bb (estimate).",
+      "preferCheck": "Checking was better. Loss {{evLossBb}} bb (estimate)."
+    },
+    "close": "Close call: “{{best}}” was slightly better (loss {{evLossBb}} bb). Equity {{equityPct}}%."
+  },
+  "outcome": {
+    "foldWin": {
+      "toBet": "{{winner}} won without a showdown on the {{street}}: the others folded to {{bettor}}'s bet ({{amount}}).",
+      "noBet": "{{winner}} won without a showdown on the {{street}}: everyone else folded."
+    },
+    "pot": {
+      "uncontested": "{{pot}} ({{amount}}) goes to {{winners}} uncontested.",
+      "category": "{{pot}} ({{amount}}): {{winners}} win(s) with a better hand — {{category}}.",
+      "rank": "{{pot}} ({{amount}}): {{winners}} win(s) — a higher {{category}}.",
+      "kicker": "{{pot}} ({{amount}}): {{winners}} win(s) on the {{kickerRank}} kicker with the same hand ({{category}}).",
+      "tie": "{{pot}} ({{amount}}) is split: {{winners}} hold the same hand ({{category}})."
+    },
+    "allIn": {
+      "ranGood": "All-in on the {{street}} with {{equityPct}}% equity: expected {{expectedBb}} bb, actual {{actualBb}} bb — {{luckBb}} bb of good luck.",
+      "ranBad": "All-in on the {{street}} with {{equityPct}}% equity: expected {{expectedBb}} bb, actual {{actualBb}} bb — {{luckBb}} bb of bad luck."
+    },
+    "hero": {
+      "won": "You won {{net}} ({{netBb}} bb).",
+      "lost": "You lost {{net}} ({{netBb}} bb).",
+      "even": "You broke even."
+    }
+  },
+  "leak": {
+    "vpipTooHigh": {
+      "title": "Playing too many hands",
+      "text": "VPIP {{vpipPct}}% against a guide of up to {{limitPct}}% ({{hands}} hands). Fold weak hands before the flop."
+    },
+    "vpipTooLow": {
+      "title": "Playing too few hands",
+      "text": "VPIP only {{vpipPct}}% against a guide of at least {{limitPct}}%. Open more hands in late position."
+    },
+    "callsTooMuchPreflop": {
+      "title": "Too much preflop calling",
+      "text": "VPIP {{vpipPct}}% but PFR only {{pfrPct}}%: a gap over {{limitPct}}%. Enter pots with a raise."
+    },
+    "openLimps": {
+      "title": "Open limps",
+      "text": "You limp in {{limpPct}}% of hands (guide: up to {{limitPct}}%). Open with a raise or fold."
+    },
+    "passivePostflop": {
+      "title": "Passive postflop play",
+      "text": "Aggression factor {{factor}} against a guide of at least {{limit}}. Bet and raise more with strong hands and draws."
+    },
+    "showdownTooOften": {
+      "title": "Too many showdowns",
+      "text": "You reach showdown in {{wtsdPct}}% of hands after the flop (guide: up to {{limitPct}}%). Let weak hands go on later streets."
+    },
+    "overfolds": {
+      "title": "Folding too much",
+      "text": "{{occurrences}} times you folded a hand that had a profitable call. Total loss {{lossBb}} bb."
+    },
+    "callsWithoutOdds": {
+      "title": "Calling without the odds",
+      "text": "{{occurrences}} times you called with less equity than needed. Total loss {{lossBb}} bb."
+    },
+    "missesValue": {
+      "title": "Missed value",
+      "text": "{{occurrences}} times you checked or called where a bet or raise likely earned more. Estimated loss {{lossBb}} bb."
+    }
+  },
+  "stats": {
+    "empty": "No hands to build stats from.",
+    "numbers": "Numbers",
+    "hands": "Hands",
+    "net": "Result",
+    "accuracy": "Decision accuracy",
+    "decisionsHint": "{{total}} decisions, EV loss {{loss}} bb",
+    "allInLuck": "All-in luck",
+    "allInHint": "{{hands}} all-ins, expected {{expected}} bb, actual {{actual}} bb",
+    "winningsTitle": "Winnings: actual vs expected",
+    "winningsHint": "Expected winnings value all-ins at their equity — the gap between the lines is luck, not skill.",
+    "handIndex": "Hand",
+    "actual": "Actual",
+    "expected": "Expected",
+    "showTable": "Show as table",
+    "leaksTitle": "Leaks",
+    "noLeaks": "No notable leaks found (or not enough hands yet).",
+    "examples": "Examples:",
+    "scope": "Period",
+    "scopes": {
+      "session": "This session",
+      "all": "All time"
+    }
+  },
+  "glossary": {
+    "terms": {
+      "equity": {
+        "name": "Equity",
+        "short": "Your share of the pot if the hand were played to the end.",
+        "long": "The share of the pot you win on average once all cards are dealt. 60% equity means 60 of every 100 chips in the pot, on average."
+      },
+      "range": {
+        "name": "Range",
+        "short": "Every hand an opponent could hold given their actions.",
+        "long": "The set of hands an opponent could have given their position, actions and bet sizes. Your decisions are judged against the range, not their real cards, because that is what you could know."
+      },
+      "potOdds": {
+        "name": "Pot odds",
+        "short": "The equity a call needs to break even.",
+        "long": "The bet you have to call divided by the pot after your call. Calling 50 into what becomes a 200 pot needs at least 25% equity."
+      },
+      "ev": {
+        "name": "EV (expected value)",
+        "short": "How many chips an action wins on average.",
+        "long": "The average result of an action if the same spot repeated many times. Folding counts as zero; calls and raises are compared with it."
+      },
+      "evLoss": {
+        "name": "EV loss",
+        "short": "What a decision cost compared with the best one, in bb.",
+        "long": "The gap between the best option's EV and your choice's EV, in big blinds. The verdict is based on it."
+      },
+      "foldEquity": {
+        "name": "Fold equity",
+        "short": "The extra value of opponents folding.",
+        "long": "The part of a bet's or raise's value that comes from opponents folding. The analysis estimates it, so bet and raise EVs are marked as estimates."
+      },
+      "accuracy": {
+        "name": "Accuracy",
+        "short": "Share of decisions rated best or good.",
+        "long": "The share of your decisions that lost at most 0.3 bb compared with the best option."
+      },
+      "bb": {
+        "name": "bb (big blind)",
+        "short": "The unit: one big blind.",
+        "long": "Wins and losses are measured in big blinds so they compare across stakes."
+      },
+      "bb100": {
+        "name": "bb/100",
+        "short": "Big blinds won per 100 hands.",
+        "long": "The headline win rate: how many big blinds you win on average every 100 hands."
+      },
+      "vpip": {
+        "name": "VPIP",
+        "short": "How often you voluntarily put chips in preflop.",
+        "long": "The share of hands where you called or raised before the flop (blinds don't count). A high VPIP means playing too many weak hands."
+      },
+      "pfr": {
+        "name": "PFR",
+        "short": "How often you raise preflop.",
+        "long": "The share of hands with a preflop raise. The closer PFR is to VPIP, the more aggressively you enter pots."
+      },
+      "af": {
+        "name": "AF (aggression factor)",
+        "short": "Postflop bets and raises divided by calls.",
+        "long": "Aggressive actions (bet, raise) divided by calls after the flop. Below 1 points to passive play."
+      },
+      "wtsd": {
+        "name": "WTSD",
+        "short": "How often you reach showdown after seeing the flop.",
+        "long": "The share of hands where you saw the flop and went to showdown. A high value often means not letting go of weak hands."
+      },
+      "wsd": {
+        "name": "W$SD",
+        "short": "How often you win at showdown.",
+        "long": "The share of showdowns where you received chips."
+      },
+      "allInEv": {
+        "name": "All-in EV",
+        "short": "Expected result of an all-in versus the actual one.",
+        "long": "Once your chips are in with cards to come, only luck decides. All-in EV is what you should win on average, separating luck from decision quality."
+      },
+      "kicker": {
+        "name": "Kicker",
+        "short": "The side card that breaks a tie.",
+        "long": "A card outside the hand itself that decides between equal hands. A pair of aces with a king beats a pair of aces with a queen."
+      },
+      "sidePot": {
+        "name": "Side pot",
+        "short": "A separate pot a shorter all-in stack cannot win.",
+        "long": "When a player is all-in for less, bets above their contribution form a separate pot contested only by those who put in more."
+      },
+      "splitPot": {
+        "name": "Split pot",
+        "short": "Equal hands share the pot.",
+        "long": "If the best hands are equal the pot is split; an odd chip goes to the first player left of the button."
+      },
+      "badBeat": {
+        "name": "Bad beat",
+        "short": "A clear favourite lost to the last cards.",
+        "long": "A player with a big edge (70%+ equity) loses to later cards. That is bad luck, not a mistake."
+      },
+      "suckOut": {
+        "name": "Suck-out",
+        "short": "A clear underdog won on the last cards.",
+        "long": "The opposite of a bad beat: a player with a small chance (30% or less) wins thanks to later cards."
+      },
+      "verdicts": {
+        "name": "Verdicts",
+        "short": "Best ★, good ✓, inaccuracy ?!, mistake ?, blunder ??.",
+        "long": "A decision rated by its EV loss: best is the optimal option; good up to 0.3 bb; inaccuracy up to 1.5 bb; mistake up to 5 bb; blunder over 5 bb."
+      }
+    }
+  }
+}

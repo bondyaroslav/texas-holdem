@@ -1,0 +1,31 @@
+{
+  "name": "texas-holdem",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @poker/web dev",
+    "build": "pnpm -r --filter=./packages/* build && pnpm --filter @poker/web build",
+    "preview": "pnpm --filter @poker/web preview",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "pnpm --filter @poker/web test:e2e"
+  },
+  "devDependencies": {
+    "@poker/config": "workspace:*",
+    "@types/node": "^22.20.5",
+    "@vitest/coverage-v8": "^4.1.12",
+    "eslint": "^9.39.5",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  }
+}

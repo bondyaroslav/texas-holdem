@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.vite/
+storybook-static/
+
+# Tests
+coverage/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Caches
+.cache/
+.eslintcache
+.prettiercache
+.turbo/
+
+# Env (keep examples)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Deploy platforms (local CLI state, tokens, build caches)
+.vercel/
+.netlify/
+.wrangler/
+.dev.vars
+.firebase/
+firebase-debug.log*
+.firebaserc.local
+.output/
+.amplify-hosting/
+.sst/
+
+# AI assistant config (local only)
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

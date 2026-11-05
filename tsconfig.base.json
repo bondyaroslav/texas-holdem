@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@poker/engine": ["packages/poker-engine/src/index.ts"],
+      "@poker/engine/*": ["packages/poker-engine/src/*"],
+      "@poker/ai": ["packages/poker-ai/src/index.ts"],
+      "@poker/ai/*": ["packages/poker-ai/src/*"],
+      "@poker/analysis": ["packages/poker-analysis/src/index.ts"],
+      "@poker/protocol": ["packages/protocol/src/index.ts"],
+      "@poker/protocol/*": ["packages/protocol/src/*"],
+      "@/*": ["apps/web/src/*"]
+    }
+  }
+}

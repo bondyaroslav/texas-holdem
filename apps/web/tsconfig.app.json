@@ -1,0 +1,22 @@
+{
+  "extends": ["../../tsconfig.base.json", "@poker/config/tsconfig/react-app.json"],
+  "compilerOptions": {
+    "outDir": "./dist/.tsc-app",
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@poker/engine": ["../../packages/poker-engine/src/index.ts"],
+      "@poker/ai": ["../../packages/poker-ai/src/index.ts"],
+      "@poker/analysis": ["../../packages/poker-analysis/src/index.ts"],
+      "@poker/protocol": ["../../packages/protocol/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json", "tests/**/*.ts", "tests/**/*.tsx"],
+  "references": [
+    { "path": "../../packages/poker-engine" },
+    { "path": "../../packages/poker-ai" },
+    { "path": "../../packages/poker-analysis" },
+    { "path": "../../packages/protocol" }
+  ]
+}
